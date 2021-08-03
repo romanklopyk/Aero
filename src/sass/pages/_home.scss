@@ -1,12 +1,14 @@
 .home {
     &__hero {
         background-image: linear-gradient(to top, #2769b1, #09498f);
-        min-height: 100vh;
+        // min-height: 100vh;
         .container {
             min-height: 100vh;
+            // background-color: aquamarine;
         }
         &-main {
-            min-height: calc(100vh-160px);
+            min-height: calc(100vh - 160px);
+            // background-color: blue;
         }
         h1 {
             font-family: Poppins;
