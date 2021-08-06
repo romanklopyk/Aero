@@ -8,11 +8,14 @@
     <title>Aero</title>
     <meta name="title" content="Gulp template">
     <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="svg">
+    <!-- <div class="svg">
 
         <svg version="1.1" id="quote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 475.082 475.081" style="enable-background:new 0 0 475.082 475.081;" xml:space="preserve">
             <g>
@@ -35,7 +38,7 @@
             </g>
             </svg>
 
-    </div>
+    </div> -->
 
     <section class="home__hero">
         <div class="container d-flex flex-column justify-content-between">
@@ -88,58 +91,172 @@
             </div>
         </div>
     </section>
-    <section class="second mt-2">
+
+    <section class="home__about">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-4">
-                    <h1>
+                    <h2>
                         ПРО НАС
-                    </h1>
+                    </h2>
                 </div>
-                <div class="col-12 col-md-12 col-lg-8">
-                    <div class="row ">
-                        <div class="col12 col-lg-6">
-                            <p>
-                                Найбільша гордість УЛА - високопрофесійні інженери і співробітники підприємства, що мають багаторічний досвід роботи на авіаремонтних підприємствах України.
-                            </p>
-                            <img src="img/image_1.png" alt="">
-
-                        </div>
-                        <div class="col12 col-lg-6 d-lg-flex flex-lg-column-reverse">
-                            <p>
-                                Вони тісно співпрацюsють з конструкторами, підприємствами авіабудування, науково-дослідними центрами і організаціями. Повний цикл обслуговування і ремонту здійснюється на сучасній ремонтній базі з необхідним обладнанням.
-                            </p>
-                            <img src="img/image_2.png" alt="">
-                        </div>
-
-
+                <div class="col-12 col-md-6 col-lg-4">
+                    <p>
+                        Найбільша гордість УЛА - високопрофесійні інженери і співробітники підприємства, що мають багаторічний досвід роботи на авіаремонтних підприємствах України.
+                    </p>
+                    <img src="img/image_1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6  col-lg-4">
+                    <div class="d-flex flex-column">
+                        <img src="img/image_2.png" alt="" class="img-fluid order-2 order-md-1">
+                        <p class="order-1 order-md-2">
+                            Вони тісно співпрацюють з конструкторами, підприємствами авіабудування, науково-дослідними центрами і організаціями. Повний цикл обслуговування і ремонту здійснюється на сучасній ремонтній базі з необхідним обладнанням.
+                        </p>
                     </div>
-                </div>
-
-            </div>
-            <div class="row mt-2">
-                <div class="col12 col-lg-6">
-                    <svg class="quote">
-                           <use href="#quote" >
-
-                           </use>
-                    </svg>
-                    <P>
-                        <span>
-                            Наша місія 
-                    </span> почати нове життя літаків Антонов, які вже довели свою ефективність в усьому світі.
-                    </P>
-                    <p>дізнатися більше -></p>
-
-                </div>
-                <div class="col12 col-lg-6">
-                    <img src="img/Depositphotos_251830867_xl-2015 1.png" alt="">
-
                 </div>
             </div>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    <section class="home__mission">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <blockquote>
+                        <img src="" alt="" class="quotes">
+                        <p>
+                            Наша місія - почати нове життя літаків Антонов, які вже довели свою ефективність в усьому світі.
+
+                        </p>
+                        <a href="#" Дізнатись більше>
+                            <img src="" alt="">
+                        </a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="plane d-none d-lg-block" style="background-image: url('img/Depositphotos_251830867_xl-2015\ 1.png'); background-position:center;">
+
+        </div>
+
+    </section>
+    <section class="home__posluhy">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>ПОСЛУГИ З РЕМОНТУ ТА МОДЕРНІЗАЦІЇ ЛІТАКІВ <strong>ANTONOV</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">АН-26</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">АН-32</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">АН-72</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">АН-74</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">комплекс робіт по продовженню призначених ресурсів і термінів служби типів Ан-26, Ан-32, Ан-72, Ан-74
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">всі види ТО для зазначених типів ВС «АНТОНОВ»
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">відновлення літака в умовах експлуатації
+
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">модернізація літака типу Ан-32 з продовженням терміну служби до 40 років і заміна авіоніки Модернізація Ан-32
+
+
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Повний список <img src="img/arr.svg" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/an-26.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home__partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>
+                        Наші партнери
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                    <img src="img/p1.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                    <img src="img/logo (1) 1.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                    <img src="img/image 19.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                    <img src="img/photo_2021-07-28 12.13 1.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                    <img src="img/photo_2021-07-28 12.13 2.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="background-color:red;">
+                    <img src="img/Contact Us.png " alt=" " class="imimg-fluid ">
+                </div>
+            </div>
+            <div class="row my ">
+                <div class="col-12 col-lg-4 ">
+                    <img src="img/g10.png " alt=" ">
+
+                </div>
+                <div class="col-12 col-lg-4 ">
+                    <ul>
+                        <li>
+                            <a href="# ">
+                                About us 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                Сertificates
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-12 col-lg-4 ">
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="js/bootstrap.js "></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>
