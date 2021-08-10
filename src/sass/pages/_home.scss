@@ -2,12 +2,32 @@
     &__hero {
         background-image: linear-gradient(to top, #2769b1, #09498f);
         // min-height: 100vh;
+        position: relative;
+        &-image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            img.fat-boy {
+                position: absolute;
+                top: 50%;
+                left: 80px;
+                transform: translateY(-50%) translateX(100%);
+                transition: 5s;
+                &.animated {
+                    transform: translateY(-50%) translateX(0%);
+                    transition: 5s;
+                }
+            }
+        }
         .container {
             min-height: 100vh;
             // background-color: aquamarine;
         }
         &-main {
             min-height: calc(100vh - 160px);
+            padding-top: 100px;
             // background-color: blue;
         }
         h1 {
