@@ -1,7 +1,7 @@
 .home {
     &__hero {
         background-image: linear-gradient(to top, #2769b1, #09498f);
-        // min-height: 100vh;
+        overflow: hidden;
         position: relative;
         &-image {
             position: absolute;
